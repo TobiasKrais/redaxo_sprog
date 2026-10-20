@@ -3319,6 +3319,12 @@ body[id^="rex-page-sprog"] .nav.rex-page-nav {
     border-radius: 0.64rem;
 }
 
+/* Löschen sitzt ganz links, abgesetzt von Abbrechen/Speichern rechts,
+   damit man ihn nicht versehentlich trifft. */
+.sprog-inbox--unit-modal-delete {
+    margin-right: auto;
+}
+
 .sprog-inbox--unit-modal-cancel:hover,
 .sprog-inbox--unit-modal-cancel:focus-visible {
     color: var(--sprog-color-fg, #1b2733);

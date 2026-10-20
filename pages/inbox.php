@@ -1048,14 +1048,14 @@ if (MigrationService::create()->isMigrationPending()) {
             </div>
 
             <footer class="sprog-inbox--unit-modal-footer">
-                <button type="button" class="sprog-inbox--unit-modal-cancel" data-role="unit-modal-cancel">
-                    <?= rex_i18n::msg('sprog_inbox_unit_modal_cancel') ?>
-                </button>
 <?php if ($canEditUnit) : ?>
                 <button type="button" class="sprog-btn sprog-btn--danger sprog-inbox--unit-modal-delete" data-role="unit-modal-delete" hidden>
                     <?= rex_i18n::msg('sprog_inbox_unit_modal_delete') ?>
                 </button>
 <?php endif; ?>
+                <button type="button" class="sprog-inbox--unit-modal-cancel" data-role="unit-modal-cancel">
+                    <?= rex_i18n::msg('sprog_inbox_unit_modal_cancel') ?>
+                </button>
                 <button type="submit" class="sprog-btn sprog-btn--primary" data-role="unit-modal-submit">
                     <?= rex_i18n::msg('sprog_inbox_unit_modal_save') ?>
                 </button>
